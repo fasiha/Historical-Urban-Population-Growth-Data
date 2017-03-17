@@ -13,7 +13,7 @@ rm(list= ls())
 
 # set working directory
 # change to relevant working directory
-setwd('H:/Fall2013Thesis/azevedoSetoWork/combiningDatasetsCodeR/finalDatasets')
+# setwd('H:/Fall2013Thesis/azevedoSetoWork/combiningDatasetsCodeR/finalDatasets')
 
 #################################################################
 # Modelski Modern Data
@@ -79,7 +79,7 @@ head(long)
 ####################################################
 
 # import the csv data
-ancient <- read.csv("modelskiAncient.csv", stringsAsFactors=FALSE)
+ancient <- read.csv("modelskiAncient.csv", stringsAsFactors=FALSE, fileEncoding="latin1")
 
 # look at the structure of the new object
 str(ancient, 1)
@@ -137,7 +137,7 @@ head(long2)
 ###############################################################
 
 # import the csv data
-chandler <- read.csv("chandler.csv", stringsAsFactors=FALSE)
+chandler <- read.csv("chandler.csv", stringsAsFactors=FALSE, fileEncoding="latin1")
 
 # look at the structure of the new object (long list - truncated)
 str(chandler)
